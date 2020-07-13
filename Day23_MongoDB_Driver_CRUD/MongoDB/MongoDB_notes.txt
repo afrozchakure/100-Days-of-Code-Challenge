@@ -1,0 +1,47 @@
+db.products.insert(
+    {
+        _id: 3, 
+        name: "Rubber",  
+        price: 1.30, 
+        stock: 43, 
+        review: [    // One-to-Many relationship
+            {
+                authorName: 'Sally',
+                rating: 5,
+                review: 'Best Rubber ever!'
+            },
+            {
+                authorName: 'John', 
+                rating: 5, 
+                review: 'Awesome rubber!'
+            }
+        ]
+    }
+)
+
+db.prodcts.insert( // Inserting a new id 
+    {
+        _id: 2, 
+        name: 'Pencil',
+        price: 0.80, 
+        stock: 12,
+        review: [
+            {
+                authorName: 'Sam',
+                rating: 4, 
+                review: 'Great Pencil'
+            },
+            {
+                authorName: 'Sting',
+                rating: 4.5, 
+                review: 'Perfect Pencil!!'
+            }
+        ]
+    }
+)
+
+
+{
+    orderNumber: 3243, 
+    productsOrdered: [1, 2]  // Array that references the id of the product
+}
