@@ -50,7 +50,7 @@ const grape = new Fruit({
     review: "Grapes are decent."
 });
 
-grape.save(); // Save pineapple into our fruits collection
+//grape.save(); // Save pineapple into our fruits collection
 
 const person = new Person({
     name: "Sam",
