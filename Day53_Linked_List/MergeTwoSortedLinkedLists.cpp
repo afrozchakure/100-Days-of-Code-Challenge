@@ -46,3 +46,6 @@ Node* sortedMerge(Node* head_A, Node* head_B)
         return head_B;
     // code here
 }  
+
+// Time Complexity - O(m+n)
+// Space Complexity - O(1)
